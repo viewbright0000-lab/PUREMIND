@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "BRIGHT VIEW TECH SOLUTIONS"
+version = "1.0.0"
+id = "artifacts/bright-view-tech"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23206
+
+[services.development]
+run = "pnpm --filter @workspace/bright-view-tech run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/bright-view-tech", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/bright-view-tech/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23206"
+BASE_PATH = "/"

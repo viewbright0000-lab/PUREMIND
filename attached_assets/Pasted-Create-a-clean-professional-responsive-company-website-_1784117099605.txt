@@ -1,0 +1,675 @@
+Create a clean, professional, responsive company website for:
+
+Company Name: BRIGHT VIEW TECH SOLUTIONS
+Registered Email: viewbright0000@gmail.com
+Contact Number: +91 8714449047
+Country: India
+
+The website will be used as the official company website for Google Play Console organization verification. It must look active, trustworthy, professional, and suitable for deployment on Vercel.
+
+TECHNOLOGY REQUIREMENTS
+
+Build the website using:
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- App Router
+- Responsive design
+- SEO-friendly structure
+- Vercel-compatible deployment
+- Reusable components
+- Clean and well-structured code
+- No database or backend required
+- Avoid unnecessary packages
+
+Add proper metadata, page titles, meta descriptions, Open Graph tags, sitemap.xml, robots.txt, and a favicon placeholder.
+
+DESIGN REQUIREMENTS
+
+Use a clean technology-company style with:
+
+- White background
+- Dark navy or black text
+- Blue accent colours
+- Professional typography
+- Spacious sections
+- Modern cards
+- Subtle animations
+- Responsive navigation
+- Professional footer
+- Mobile, tablet, and desktop support
+
+Do not use fake awards, fake testimonials, fake statistics, fake certifications, or fake client logos.
+
+Do not use images of doctors or medical professionals.
+
+Use simple icons or illustrations related to:
+
+- Mobile applications
+- Voice communication
+- Video calling
+- Digital wellness
+- Technology
+- Customer support
+
+REQUIRED PAGES
+
+Create the following pages:
+
+1. Home
+2. About Us
+3. Services
+4. Applications
+5. Contact
+6. Privacy Policy
+7. Terms and Conditions
+
+Add all pages to the header navigation and footer.
+
+HOME PAGE
+
+Hero Section
+
+Heading:
+
+Technology That Brings People Together
+
+Description:
+
+BRIGHT VIEW TECH SOLUTIONS develops and manages digital communication platforms designed to help people connect, communicate, and access supportive conversations through secure and user-friendly mobile applications.
+
+Buttons:
+
+- Explore Our Applications
+- Contact Us
+
+About Preview
+
+BRIGHT VIEW TECH SOLUTIONS is an India-based technology company focused on developing mobile applications and digital communication platforms. Our applications provide voice-based and digital interaction experiences that allow users to connect with independent consultants and conversation partners from the comfort of their own space.
+
+We focus on reliable technology, simple user experiences, privacy, platform safety, and continuous product improvement.
+
+Services Preview
+
+Create cards for:
+
+- Mobile App Development
+- Voice Communication Platforms
+- Video Communication Solutions
+- Application Management and Maintenance
+- User Experience Design
+- Platform Support and Quality Assurance
+- Cloud-Based Application Solutions
+- Application Security and Performance Monitoring
+
+Applications Preview
+
+Mention that the company develops and manages multiple communication applications, including:
+
+- Mallu Talk
+- Vibe Talk
+- Sweet Mallus
+- Other communication and digital interaction applications
+
+Add this note:
+
+Application availability, features, and supported platforms may vary. Additional applications may be added as the company expands its services.
+
+Our Commitment Section
+
+Include:
+
+- User-friendly digital experiences
+- Reliable voice and communication technology
+- Responsible platform management
+- Privacy-focused development practices
+- Continuous application maintenance
+- Clear community and usage guidelines
+
+Disclaimer
+
+Add a visible disclaimer:
+
+Our applications provide communication, companionship, general guidance, and wellness-oriented conversation services. They are not emergency services and do not replace professional medical, psychological, legal, financial, or therapeutic advice. Users should seek qualified professionals for matters requiring licensed professional assistance.
+
+ABOUT US PAGE
+
+Heading:
+
+About BRIGHT VIEW TECH SOLUTIONS
+
+Content:
+
+BRIGHT VIEW TECH SOLUTIONS is a technology company that develops and manages mobile applications and digital communication platforms.
+
+Our platforms are designed to make digital interaction more accessible, convenient, and engaging. Through voice-based and other communication features, users may connect with independent consultants, conversation partners, or service providers from their own space.
+
+The company manages applications such as Mallu Talk, Vibe Talk, Sweet Mallus, and other digital communication products.
+
+Our Mission
+
+Our mission is to create reliable and easy-to-use digital platforms that help people communicate, connect, and access supportive conversations through technology.
+
+Our Vision
+
+Our vision is to build responsible communication platforms that combine intuitive design, platform safety, dependable technology, and positive user experiences.
+
+Our Values
+
+- User privacy
+- Responsible technology
+- Clear communication
+- Platform reliability
+- Continuous improvement
+- Respectful user experiences
+
+Important Service Clarification
+
+BRIGHT VIEW TECH SOLUTIONS is a technology platform provider. Unless explicitly stated otherwise, consultants and conversation partners using our applications operate independently.
+
+Services offered through our applications are intended for general communication, companionship, lifestyle conversation, and wellness-oriented support.
+
+The company does not represent that every service provider is a licensed doctor, psychologist, therapist, lawyer, or financial adviser. Users must review the relevant application information before using any service.
+
+SERVICES PAGE
+
+Create detailed sections for:
+
+Mobile Application Development
+
+We design and develop modern mobile applications focused on performance, usability, security, and scalability.
+
+Voice Communication Platforms
+
+We build applications that support real-time voice communication between users and independent service providers.
+
+Video Communication Solutions
+
+We develop secure and user-friendly video communication features where supported by the relevant application.
+
+Application Management
+
+We manage application updates, feature improvements, platform compatibility, user experience improvements, and technical maintenance.
+
+UI and UX Design
+
+We create simple and intuitive interfaces designed to make applications easier to understand and use.
+
+Quality Assurance
+
+We test applications across supported devices and network conditions to improve reliability and performance.
+
+Platform Safety
+
+We implement reporting tools, account controls, usage policies, moderation workflows, and other platform-management measures where applicable.
+
+Technical Support
+
+We provide technical assistance related to application access, account issues, payments, application performance, and general platform usage.
+
+APPLICATIONS PAGE
+
+Introduction:
+
+BRIGHT VIEW TECH SOLUTIONS develops and manages multiple communication-focused mobile applications. These applications may provide voice calling, video calling, digital interaction, consultant discovery, wallet functionality, and other communication features.
+
+Mallu Talk
+
+Mallu Talk is a communication platform designed to help users connect through voice-based conversations and other supported digital interaction features.
+
+Vibe Talk
+
+Vibe Talk provides users with access to communication and conversation-based services through an easy-to-use mobile experience.
+
+Sweet Mallus
+
+Sweet Mallus is a digital interaction application designed for convenient communication and user engagement.
+
+Other Applications
+
+BRIGHT VIEW TECH SOLUTIONS may develop, publish, operate, or support additional applications as part of its growing digital product portfolio.
+
+For each application, add a button labelled:
+
+View on Google Play
+
+Use a placeholder link such as "#" until the real Play Store URLs are provided.
+
+Add a code comment showing where the real Play Store URL should be inserted.
+
+Applications Disclaimer
+
+Application features, service providers, pricing, availability, and eligibility requirements may differ between applications. Users should review each application’s store listing, privacy policy, terms, and in-app information before using it.
+
+CONTACT PAGE
+
+Show:
+
+Company: BRIGHT VIEW TECH SOLUTIONS
+Email: viewbright0000@gmail.com
+Phone: +91 8714449047
+Country: India
+
+Make the email and phone number clickable.
+
+Create a contact form with:
+
+- Full Name
+- Email Address
+- Phone Number
+- Subject
+- Message
+- Submit button
+
+No backend is required.
+
+The form can use a mailto action or display a clear message asking the user to contact the company directly through email.
+
+Also show:
+
+Business Enquiries: viewbright0000@gmail.com
+Application Support: viewbright0000@gmail.com
+Privacy Enquiries: viewbright0000@gmail.com
+
+Add this message:
+
+For application-specific issues, users should include the application name, registered phone number or email address, device model, and a brief description of the issue.
+
+Users should not send passwords, OTPs, card details, banking information, or other sensitive authentication details.
+
+PRIVACY POLICY PAGE
+
+Effective Date: 15 July 2026
+Last Updated: 15 July 2026
+
+Create a detailed privacy policy with the following sections:
+
+1. Introduction
+
+BRIGHT VIEW TECH SOLUTIONS respects user privacy and is committed to handling personal information responsibly.
+
+This Privacy Policy explains how information may be collected, used, stored, and shared when users visit the company website or use applications operated or managed by the company.
+
+2. Information We May Collect
+
+Depending on the service used, we may collect:
+
+- Name
+- Phone number
+- Email address
+- Account information
+- Profile details
+- Device information
+- IP address
+- Application usage information
+- Call-related metadata
+- Transaction and payment status information
+- Support requests
+- Messages submitted to customer support
+- Crash reports
+- Diagnostic information
+- Information required to prevent fraud and misuse
+
+Clarify that users should never share passwords, OTPs, complete card numbers, banking credentials, or sensitive authentication details with support representatives.
+
+3. Voice and Communication Services
+
+Applications may enable voice calls, video calls, text communication, or other digital interactions.
+
+Call duration, connection status, service-provider details, timestamps, and related technical metadata may be processed for billing, service delivery, dispute resolution, safety, fraud prevention, and performance monitoring.
+
+Do not state that calls are recorded by default.
+
+Use this wording:
+
+Calls or conversations will only be recorded where the relevant application provides clear notice, has a lawful basis, and obtains any consent required by applicable law.
+
+4. How Information Is Used
+
+Information may be used to:
+
+- Create and manage accounts
+- Provide application services
+- Facilitate communication
+- Process payments
+- Maintain user wallets or balances
+- Provide customer support
+- Improve applications
+- Detect fraud and misuse
+- Enforce platform policies
+- Meet legal requirements
+- Send important account or service messages
+
+5. Payment Information
+
+Payments may be processed through third-party payment providers.
+
+The company may receive transaction identifiers, payment status, amount, and limited billing details.
+
+Complete card or banking credentials are generally processed directly by the payment provider.
+
+6. Sharing of Information
+
+Information may be shared with:
+
+- Service providers
+- Cloud hosting providers
+- Analytics providers
+- Payment processors
+- Communication technology providers
+- Customer-support providers
+- Independent consultants where required to deliver the service
+- Government or legal authorities when required by law
+
+State clearly:
+
+BRIGHT VIEW TECH SOLUTIONS does not sell personal information for monetary consideration.
+
+7. Data Retention
+
+Personal information is retained only for as long as reasonably necessary to provide services, meet legal obligations, resolve disputes, prevent fraud, and enforce agreements.
+
+8. Data Security
+
+The company uses reasonable administrative, technical, and organizational measures to protect information.
+
+However, no online service can guarantee complete security.
+
+9. User Rights
+
+Users may contact the company to request:
+
+- Access to personal information
+- Correction of inaccurate information
+- Account deletion
+- Withdrawal of applicable consent
+- Information about privacy practices
+
+Requests may require identity verification.
+
+10. Children’s Privacy
+
+The website and applications are not intended for children under 18 unless an application explicitly states otherwise and has appropriate safeguards.
+
+Users must meet the age requirement stated in the relevant application.
+
+11. Third-Party Services
+
+Applications may contain links or integrations operated by third parties.
+
+Their privacy practices are governed by their own policies.
+
+12. Changes to This Policy
+
+The company may update this Privacy Policy periodically.
+
+The latest revision date will appear at the top of the page.
+
+13. Contact Us
+
+BRIGHT VIEW TECH SOLUTIONS
+Email: viewbright0000@gmail.com
+Phone: +91 8714449047
+Country: India
+
+Add this comment in the source code:
+
+This privacy policy is a general template and should be reviewed by a qualified legal professional before production use.
+
+TERMS AND CONDITIONS PAGE
+
+Effective Date: 15 July 2026
+Last Updated: 15 July 2026
+
+Create detailed Terms and Conditions with the following sections:
+
+1. Acceptance of Terms
+
+By accessing the website or using an application operated or managed by BRIGHT VIEW TECH SOLUTIONS, users agree to these Terms and Conditions and any application-specific rules.
+
+2. Eligibility
+
+Users must be at least 18 years old or meet the minimum age specified in the relevant application.
+
+3. Nature of Services
+
+The company develops and manages communication platforms that may allow users to connect with independent consultants, conversation partners, or other service providers through voice calls, video calls, text, or related features.
+
+4. Wellness and Professional Disclaimer
+
+Services are intended for:
+
+- General communication
+- Companionship
+- Lifestyle discussion
+- Motivation
+- Wellness-oriented conversation
+
+They are not substitutes for:
+
+- Medical treatment
+- Mental-health diagnosis
+- Licensed therapy
+- Emergency assistance
+- Legal advice
+- Financial advice
+- Professional counselling
+
+Users experiencing an emergency should contact the appropriate local emergency service or a qualified professional.
+
+5. Independent Service Providers
+
+Consultants and conversation partners may operate independently.
+
+Their statements and opinions are their own unless specifically stated otherwise.
+
+The company does not guarantee any particular result, outcome, accuracy, compatibility, emotional benefit, or professional qualification unless expressly confirmed within the relevant application.
+
+6. User Accounts
+
+Users must provide accurate information and keep their login credentials secure.
+
+Users are responsible for activity performed through their accounts.
+
+7. Acceptable Use
+
+Users must not:
+
+- Harass or threaten others
+- Share illegal or harmful content
+- Impersonate another person
+- Attempt unauthorized access
+- Misuse payment systems
+- Use the platform for fraud
+- Record conversations without required consent
+- Share another person’s private information
+- Interfere with application security
+- Use the service for unlawful purposes
+
+8. Payments, Wallets and Refunds
+
+Applications may use:
+
+- Paid calls
+- Subscriptions
+- Digital wallets
+- Coins
+- Credits
+- Other paid features
+
+Prices and billing rules will be displayed within the relevant application.
+
+Wallet credits may be non-transferable and may not represent legal currency.
+
+Refunds will be handled according to the policy shown in the relevant application, applicable payment-provider rules, and applicable law.
+
+9. Service Availability
+
+The company does not guarantee uninterrupted access.
+
+Services may be affected by:
+
+- Maintenance
+- Network availability
+- Device compatibility
+- Third-party services
+- Technical issues
+- Circumstances outside the company’s control
+
+10. Suspension and Termination
+
+Accounts may be restricted or terminated for:
+
+- Policy violations
+- Suspected fraud
+- Unlawful activity
+- Safety risks
+- Payment disputes
+- Misuse of the platform
+
+11. Intellectual Property
+
+The website, applications, logos, software, text, designs, and related materials are owned by or licensed to BRIGHT VIEW TECH SOLUTIONS.
+
+Users may not copy, distribute, reverse engineer, or commercially exploit them without permission.
+
+12. Limitation of Liability
+
+To the maximum extent permitted by law, the company will not be responsible for indirect, incidental, special, or consequential losses arising from the use or inability to use the website or applications.
+
+Do not exclude responsibilities that cannot legally be excluded.
+
+13. Third-Party Services
+
+Applications may rely on third-party providers for:
+
+- Payments
+- Hosting
+- Analytics
+- Communication
+- Customer support
+- Other technical features
+
+The company is not responsible for independent third-party services beyond the extent required by law.
+
+14. Changes to the Terms
+
+The company may update these Terms periodically.
+
+Continued use after an update may constitute acceptance of the revised Terms where permitted by law.
+
+15. Governing Law
+
+These Terms will be governed by the applicable laws of India.
+
+Any dispute will be subject to the jurisdiction of the competent courts in India, unless applicable consumer law requires otherwise.
+
+16. Contact Information
+
+BRIGHT VIEW TECH SOLUTIONS
+Email: viewbright0000@gmail.com
+Phone: +91 8714449047
+Country: India
+
+Add this comment in the source code:
+
+These terms are a general template and should be reviewed by a qualified legal professional before production use.
+
+FOOTER
+
+Display:
+
+BRIGHT VIEW TECH SOLUTIONS
+
+Developing reliable communication and digital interaction platforms.
+
+Footer links:
+
+- Home
+- About Us
+- Services
+- Applications
+- Contact
+- Privacy Policy
+- Terms and Conditions
+
+Contact details:
+
+Email: viewbright0000@gmail.com
+Phone: +91 8714449047
+Country: India
+
+Copyright:
+
+© 2026 BRIGHT VIEW TECH SOLUTIONS. All rights reserved.
+
+Do not display:
+
+- Made with Replit
+- Powered by Vercel
+- Template branding
+- Replit branding
+
+SEO REQUIREMENTS
+
+Homepage Meta Title:
+
+BRIGHT VIEW TECH SOLUTIONS | Mobile Apps and Communication Platforms
+
+Homepage Meta Description:
+
+BRIGHT VIEW TECH SOLUTIONS develops and manages mobile applications, voice communication platforms, and digital interaction services, including Mallu Talk, Vibe Talk, and Sweet Mallus.
+
+Add JSON-LD Organization structured data with:
+
+Name: BRIGHT VIEW TECH SOLUTIONS
+Email: viewbright0000@gmail.com
+Telephone: +91 8714449047
+Address Country: India
+URL: Use the final website URL from an environment variable
+
+Do not add fake social media profile URLs.
+
+TECHNICAL AND DEPLOYMENT REQUIREMENTS
+
+1. Ensure npm run build completes successfully.
+2. Fix all TypeScript, linting, and build errors.
+3. Add a README.md file.
+4. Include instructions for:
+   - Running locally
+   - Building the project
+   - Deploying to Vercel
+   - Connecting a custom domain
+   - Updating the website URL
+5. Use this environment variable:
+
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+
+6. Use the environment variable for:
+   - Canonical URLs
+   - Sitemap
+   - Open Graph metadata
+   - JSON-LD structured data
+7. Generate:
+   - /robots.txt
+   - /sitemap.xml
+8. Ensure every page works when opened directly.
+9. Ensure all navigation links work.
+10. Test the website on mobile, tablet, and desktop.
+11. Do not use lorem ipsum.
+12. Do not include fake information.
+13. Do not make unsupported medical or therapeutic claims.
+14. Do not describe consultants as licensed therapists unless verified.
+15. Do not collect health information through the contact form.
+16. Add a cookie notice only if analytics or non-essential cookies are actually used.
+17. Keep the project simple, professional, fast, and easy to deploy on Vercel.
+
+After completing the website:
+
+- Run the production build
+- Fix all errors
+- Confirm all pages work
+- Provide step-by-step Vercel deployment instructions
+- Explain how to connect the custom domain
+- Explain where to update Play Store application links
