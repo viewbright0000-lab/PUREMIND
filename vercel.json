@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/bright-view-tech run build",
+  "outputDirectory": "artifacts/bright-view-tech/dist/public",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
