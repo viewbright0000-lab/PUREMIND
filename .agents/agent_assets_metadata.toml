@@ -6,3 +6,9 @@ id = "MVbuvM59L34aJUDDskTV4"
 uri = "file://bright-view-tech-website.html"
 type = "unspecified"
 title = "BRIGHT VIEW TECH SOLUTIONS — Website HTML"
+
+[[outputs]]
+id = "oGFJYX2AJSvRuHZ2ZtNPp"
+uri = "file://bright-view-tech-netlify.zip"
+type = "unspecified"
+title = "Bright View Tech — Netlify Deploy Package"
