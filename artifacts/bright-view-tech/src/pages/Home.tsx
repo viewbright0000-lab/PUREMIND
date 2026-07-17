@@ -77,7 +77,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "BRIGHT VIEW TECH SOLUTIONS",
-    "email": "viewbright0000@gmail.com",
+    "email": "info@pureminds.in",
     "telephone": "+91 8714449047",
     "address": { "@type": "PostalAddress", "addressCountry": "IN" },
   };

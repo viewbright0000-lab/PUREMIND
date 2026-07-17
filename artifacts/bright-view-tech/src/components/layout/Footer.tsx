@@ -27,8 +27,8 @@ export function Footer() {
               Voice-based wellness applications helping individuals relax, reduce stress, and enhance their overall well-being.
             </p>
             <div className="space-y-3">
-              <a href="mailto:viewbright0000@gmail.com" className="flex items-center gap-3 text-sm text-gray-300 hover:text-accent transition-colors">
-                <Mail size={16} className="text-accent" /> viewbright0000@gmail.com
+              <a href="mailto:info@pureminds.in" className="flex items-center gap-3 text-sm text-gray-300 hover:text-accent transition-colors">
+                <Mail size={16} className="text-accent" /> info@pureminds.in
               </a>
               <a href="tel:+918714449047" className="flex items-center gap-3 text-sm text-gray-300 hover:text-accent transition-colors">
                 <Phone size={16} className="text-accent" /> +91 8714449047
@@ -72,6 +72,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500">© 2026 BRIGHT VIEW TECH SOLUTIONS. All rights reserved.</p>
+          <p className="text-xs text-gray-500 text-center md:text-left">Pure Minds is owned and operated by Bright View Tech Solutions.</p>
           <div className="flex gap-2 flex-wrap">
             {['Bestie Talk', 'New Talk', 'Pure Minds'].map((app) => (
               <span key={app} className="text-xs bg-white/7 border border-white/10 text-gray-400 px-3 py-1 rounded-full">{app}</span>

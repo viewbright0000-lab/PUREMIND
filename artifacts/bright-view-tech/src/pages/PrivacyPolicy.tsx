@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
             <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
             <p>
               <strong>BRIGHT VIEW TECH SOLUTIONS</strong><br />
-              Email: <a href="mailto:viewbright0000@gmail.com">viewbright0000@gmail.com</a><br />
+              Email: <a href="mailto:info@pureminds.in">info@pureminds.in</a><br />
               Phone: <a href="tel:+918714449047">+91 8714449047</a><br />
               Country: India
             </p>

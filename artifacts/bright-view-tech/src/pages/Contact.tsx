@@ -43,13 +43,13 @@ export default function Contact() {
                 Company Information
               </div>
 
-              <a href="mailto:viewbright0000@gmail.com" className="flex items-start gap-4 group">
+              <a href="mailto:info@pureminds.in" className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent transition-colors">
                   <Mail className="text-accent group-hover:text-white transition-colors" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-1">Email Address</p>
-                  <p className="text-gray-900 font-medium group-hover:text-accent transition-colors">viewbright0000@gmail.com</p>
+                  <p className="text-gray-900 font-medium group-hover:text-accent transition-colors">info@pureminds.in</p>
                 </div>
               </a>
 
@@ -85,13 +85,13 @@ export default function Contact() {
                 Help &amp; Support
               </div>
 
-              <a href="mailto:viewbright0000@gmail.com" className="flex items-start gap-4 group">
+              <a href="mailto:info@pureminds.in" className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent transition-colors">
                   <HeadphonesIcon className="text-accent group-hover:text-white transition-colors" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium mb-1">Support Email</p>
-                  <p className="text-gray-900 font-medium group-hover:text-accent transition-colors">viewbright0000@gmail.com</p>
+                  <p className="text-gray-900 font-medium group-hover:text-accent transition-colors">info@pureminds.in</p>
                 </div>
               </a>
 
