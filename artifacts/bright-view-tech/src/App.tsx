@@ -11,6 +11,8 @@ import Products from '@/pages/Products';
 import Contact from '@/pages/Contact';
 import PrivacyPolicy from '@/pages/PrivacyPolicy';
 import Terms from '@/pages/Terms';
+import RefundPolicy from '@/pages/RefundPolicy';
+import CancellationPolicy from '@/pages/CancellationPolicy';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -25,6 +27,8 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms" component={Terms} />
+        <Route path="/refund-policy" component={RefundPolicy} />
+        <Route path="/cancellation-policy" component={CancellationPolicy} />
         <Route component={NotFound} />
       </Switch>
     </PageWrapper>
