@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Mic, ShieldCheck, Clock, Heart } from 'lucide-react';
+import { Mic, ShieldCheck, Clock, Heart, Download, ExternalLink, Sparkles } from 'lucide-react';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -29,6 +29,8 @@ const products = [
     badgeClass: 'bg-blue-100 text-blue-700',
     iconClass: 'from-blue-500 to-blue-700',
     dotClass: 'bg-blue-500',
+    btnClass: 'bg-blue-600 hover:bg-blue-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbright.customer&pcampaignid=web_share',
   },
   {
     initials: 'NT',
@@ -46,6 +48,8 @@ const products = [
     badgeClass: 'bg-emerald-100 text-emerald-700',
     iconClass: 'from-emerald-500 to-emerald-700',
     dotClass: 'bg-emerald-500',
+    btnClass: 'bg-emerald-600 hover:bg-emerald-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbrightnewtalk.customer&pcampaignid=web_share',
   },
   {
     initials: 'PM',
@@ -63,6 +67,45 @@ const products = [
     badgeClass: 'bg-violet-100 text-violet-700',
     iconClass: 'from-violet-500 to-violet-700',
     dotClass: 'bg-violet-500',
+    btnClass: 'bg-violet-600 hover:bg-violet-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbrightpuremind.customer&pcampaignid=web_share',
+  },
+];
+
+const upcomingProducts = [
+  {
+    initials: 'CM',
+    name: 'Crushmate',
+    subtitle: 'Companionship, care, and social warmth.',
+    description:
+      'Crushmate is designed to make meaningful social conversations effortless and welcoming. Experience genuine human connection through real-time audio rooms and safe spaces. Currently under active development.',
+    features: [
+      { icon: Heart,        label: 'Supportive social listening spaces' },
+      { icon: Mic,          label: 'Real-time conversational audio' },
+      { icon: ShieldCheck,  label: 'Protected, safe community guidelines' },
+      { icon: Clock,        label: 'Coming soon to Google Play Store' },
+    ],
+    cardClass: 'from-rose-50 to-pink-100 border-rose-200',
+    badgeClass: 'bg-rose-100 text-rose-700',
+    iconClass: 'from-rose-500 to-pink-600',
+    dotClass: 'bg-rose-500',
+  },
+  {
+    initials: 'HM',
+    name: 'Hellomate',
+    subtitle: 'Say hello to brighter, uplifting days.',
+    description:
+      'Hellomate is your daily companion app focused on stress-free check-ins, positive audio conversations, and uplifting moments to help you navigate everyday life with a smile. Launching soon.',
+    features: [
+      { icon: Mic,          label: 'Everyday friendly voice check-ins' },
+      { icon: Heart,        label: 'Positive mood & emotional boosts' },
+      { icon: ShieldCheck,  label: 'Private, secure voice interaction' },
+      { icon: Clock,        label: 'In active development' },
+    ],
+    cardClass: 'from-amber-50 to-orange-100 border-amber-200',
+    badgeClass: 'bg-amber-100 text-amber-800',
+    iconClass: 'from-amber-500 to-orange-600',
+    dotClass: 'bg-amber-500',
   },
 ];
 
@@ -96,16 +139,31 @@ export default function Products() {
                 className={`rounded-3xl bg-gradient-to-br ${p.cardClass} border p-8 md:p-12`}>
                 <div className="flex flex-col md:flex-row gap-10">
                   {/* Left */}
-                  <div className="md:w-1/2">
-                    <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeClass} inline-block mb-6`}>
-                      Voice Wellness App
-                    </span>
-                    <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${p.iconClass} flex items-center justify-center text-white font-extrabold text-2xl mb-6 shadow-xl`}>
-                      {p.initials}
+                  <div className="md:w-1/2 flex flex-col justify-between">
+                    <div>
+                      <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeClass} inline-block mb-6`}>
+                        Voice Wellness App
+                      </span>
+                      <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${p.iconClass} flex items-center justify-center text-white font-extrabold text-2xl mb-6 shadow-xl`}>
+                        {p.initials}
+                      </div>
+                      <h2 className="text-3xl font-extrabold text-primary mb-2">{p.name}</h2>
+                      <p className="text-sm font-semibold text-gray-500 italic mb-5">{p.subtitle}</p>
+                      <p className="text-gray-600 leading-relaxed mb-6">{p.description}</p>
                     </div>
-                    <h2 className="text-3xl font-extrabold text-primary mb-2">{p.name}</h2>
-                    <p className="text-sm font-semibold text-gray-500 italic mb-5">{p.subtitle}</p>
-                    <p className="text-gray-600 leading-relaxed">{p.description}</p>
+
+                    <div className="pt-2">
+                      <a
+                        href={p.playStoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm shadow-md transition-all duration-200 ${p.btnClass}`}
+                      >
+                        <Download size={18} />
+                        <span>Download on Google Play</span>
+                        <ExternalLink size={14} className="opacity-75" />
+                      </a>
+                    </div>
                   </div>
                   {/* Right */}
                   <div className="md:w-1/2 flex flex-col justify-center">
@@ -125,6 +183,71 @@ export default function Products() {
               </motion.div>
             ))}
           </motion.div>
+
+          {/* ── UPCOMING APPS UNDER DEVELOPMENT ── */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 tracking-wider uppercase mb-3">
+                <Sparkles size={14} /> Under Development
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-primary">New Apps in the Pipeline</h2>
+              <p className="text-base text-gray-600 mt-3 max-w-xl mx-auto">
+                Discover the upcoming companion experiences currently being designed and crafted by our team.
+              </p>
+            </div>
+
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+              className="flex flex-col gap-10">
+              {upcomingProducts.map((p) => (
+                <motion.div key={p.name} variants={fadeUp}
+                  className={`rounded-3xl bg-gradient-to-br ${p.cardClass} border p-8 md:p-12 relative overflow-hidden`}>
+                  <div className="absolute top-6 right-6">
+                    <span className="bg-white/90 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full text-gray-700 border border-gray-200">
+                      Coming Soon
+                    </span>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-10">
+                    {/* Left */}
+                    <div className="md:w-1/2 flex flex-col justify-between">
+                      <div>
+                        <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeClass} inline-block mb-6`}>
+                          Under Development
+                        </span>
+                        <div className={`w-20 h-20 rounded-3xl bg-gradient-to-br ${p.iconClass} flex items-center justify-center text-white font-extrabold text-2xl mb-6 shadow-xl`}>
+                          {p.initials}
+                        </div>
+                        <h3 className="text-3xl font-extrabold text-primary mb-2">{p.name}</h3>
+                        <p className="text-sm font-semibold text-gray-500 italic mb-5">{p.subtitle}</p>
+                        <p className="text-gray-600 leading-relaxed mb-6">{p.description}</p>
+                      </div>
+
+                      <div className="pt-2">
+                        <div className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm bg-white/70 text-gray-600 border border-gray-200 cursor-not-allowed">
+                          <Clock size={16} />
+                          <span>Launching Soon on Google Play</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right */}
+                    <div className="md:w-1/2 flex flex-col justify-center">
+                      <h4 className="text-sm font-bold tracking-widest uppercase text-gray-400 mb-5">Highlights</h4>
+                      <div className="space-y-4">
+                        {p.features.map(({ icon: Icon, label }) => (
+                          <div key={label} className="flex items-center gap-4 bg-white/70 rounded-xl p-4 border border-white/60 backdrop-blur-sm">
+                            <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                              <Icon size={18} className="text-gray-500" strokeWidth={1.5} />
+                            </div>
+                            <span className="text-sm font-semibold text-gray-700">{label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
 
           {/* Disclaimer */}
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
-import { ShieldCheck, Heart, Mic, Clock, Star, Users } from 'lucide-react';
+import { ShieldCheck, Heart, Mic, Clock, Star, Users, Download, Sparkles, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const fadeUp = {
@@ -27,6 +27,8 @@ const products = [
     badgeBg: 'bg-blue-100 text-blue-700',
     dotColor: 'bg-blue-500',
     iconBg: 'from-blue-500 to-blue-700',
+    btnBg: 'bg-blue-600 hover:bg-blue-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbright.customer&pcampaignid=web_share',
   },
   {
     initials: 'NT',
@@ -40,6 +42,8 @@ const products = [
     badgeBg: 'bg-emerald-100 text-emerald-700',
     dotColor: 'bg-emerald-500',
     iconBg: 'from-emerald-500 to-emerald-700',
+    btnBg: 'bg-emerald-600 hover:bg-emerald-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbrightnewtalk.customer&pcampaignid=web_share',
   },
   {
     initials: 'PM',
@@ -53,6 +57,35 @@ const products = [
     badgeBg: 'bg-violet-100 text-violet-700',
     dotColor: 'bg-violet-500',
     iconBg: 'from-violet-500 to-violet-700',
+    btnBg: 'bg-violet-600 hover:bg-violet-700 text-white',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.viewbrightpuremind.customer&pcampaignid=web_share',
+  },
+];
+
+const upcomingProducts = [
+  {
+    initials: 'CM',
+    name: 'Crushmate',
+    tagline: 'Companionship & conversational wellness.',
+    desc: 'An exciting new interactive social companionship app currently under development. Stay tuned for launch on Google Play Store!',
+    features: ['Social voice companionship', 'Friendly audio spaces', 'Supportive listening community'],
+    bg: 'from-rose-50 to-pink-100',
+    border: 'border-rose-200',
+    badgeBg: 'bg-rose-100 text-rose-700',
+    dotColor: 'bg-rose-500',
+    iconBg: 'from-rose-500 to-pink-600',
+  },
+  {
+    initials: 'HM',
+    name: 'Hellomate',
+    tagline: 'Say hello to daily positivity and care.',
+    desc: 'Your friendly daily wellness companion designed to bring joy, stress-free check-ins, and warmth. In active development.',
+    features: ['Daily wellness check-ins', 'Warm conversation partners', 'Gentle mood boosters'],
+    bg: 'from-amber-50 to-orange-100',
+    border: 'border-amber-200',
+    badgeBg: 'bg-amber-100 text-amber-800',
+    dotColor: 'bg-amber-500',
+    iconBg: 'from-amber-500 to-orange-600',
   },
 ];
 
@@ -184,27 +217,91 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {products.map((p) => (
               <motion.div key={p.name} variants={fadeUp}
-                className={`rounded-3xl p-8 bg-gradient-to-br ${p.bg} border ${p.border} hover:-translate-y-2 transition-transform duration-300`}>
-                <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeBg} inline-block mb-6`}>
-                  Voice Wellness
-                </span>
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${p.iconBg} flex items-center justify-center text-white font-extrabold text-xl mb-6 shadow-lg`}>
-                  {p.initials}
+                className={`rounded-3xl p-8 bg-gradient-to-br ${p.bg} border ${p.border} hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between`}>
+                <div>
+                  <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeBg} inline-block mb-6`}>
+                    Voice Wellness
+                  </span>
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${p.iconBg} flex items-center justify-center text-white font-extrabold text-xl mb-6 shadow-lg`}>
+                    {p.initials}
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-primary mb-2">{p.name}</h3>
+                  <p className="text-sm font-semibold text-gray-500 italic mb-4">{p.tagline}</p>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6">{p.desc}</p>
+                  <ul className="space-y-2.5 mb-8">
+                    {p.features.map((f) => (
+                      <li key={f} className="flex items-center gap-2.5 text-sm text-gray-700 font-medium">
+                        <span className={`w-2 h-2 rounded-full ${p.dotColor} flex-shrink-0`} />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-2xl font-extrabold text-primary mb-2">{p.name}</h3>
-                <p className="text-sm font-semibold text-gray-500 italic mb-4">{p.tagline}</p>
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">{p.desc}</p>
-                <ul className="space-y-2.5">
-                  {p.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2.5 text-sm text-gray-700 font-medium">
-                      <span className={`w-2 h-2 rounded-full ${p.dotColor} flex-shrink-0`} />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+
+                <a
+                  href={p.playStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 font-bold text-sm shadow-md transition-all duration-200 ${p.btnBg}`}
+                >
+                  <Download size={18} />
+                  <span>Download on Play Store</span>
+                  <ExternalLink size={14} className="opacity-75" />
+                </a>
               </motion.div>
             ))}
           </motion.div>
+
+          {/* ── UPCOMING APPS UNDER DEVELOPMENT ── */}
+          <div className="mt-16">
+            <div className="text-center mb-10">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 tracking-wider uppercase mb-3">
+                <Sparkles size={14} /> Under Development
+              </span>
+              <h3 className="text-2xl md:text-3xl font-extrabold text-primary">New Apps Coming Soon</h3>
+              <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
+                We are actively developing new companionship and voice wellness experiences to enrich your everyday life.
+              </p>
+            </div>
+
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {upcomingProducts.map((p) => (
+                <motion.div key={p.name} variants={fadeUp}
+                  className={`rounded-3xl p-8 bg-gradient-to-br ${p.bg} border ${p.border} flex flex-col justify-between relative overflow-hidden`}>
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-white/80 backdrop-blur-sm text-xs font-bold px-2.5 py-1 rounded-full text-gray-600 border border-gray-200">
+                      In Development
+                    </span>
+                  </div>
+                  <div>
+                    <span className={`text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full ${p.badgeBg} inline-block mb-6`}>
+                      Coming Soon
+                    </span>
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${p.iconBg} flex items-center justify-center text-white font-extrabold text-xl mb-6 shadow-lg`}>
+                      {p.initials}
+                    </div>
+                    <h4 className="text-2xl font-extrabold text-primary mb-2">{p.name}</h4>
+                    <p className="text-sm font-semibold text-gray-500 italic mb-4">{p.tagline}</p>
+                    <p className="text-sm text-gray-600 leading-relaxed mb-6">{p.desc}</p>
+                    <ul className="space-y-2.5 mb-8">
+                      {p.features.map((f) => (
+                        <li key={f} className="flex items-center gap-2.5 text-sm text-gray-700 font-medium">
+                          <span className={`w-2 h-2 rounded-full ${p.dotColor} flex-shrink-0`} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="w-full py-3 px-4 rounded-xl flex items-center justify-center gap-2 font-medium text-sm bg-white/60 text-gray-500 border border-gray-200 cursor-not-allowed">
+                    <Clock size={16} />
+                    <span>Launching Soon on Google Play</span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
             className="mt-10 bg-white border border-gray-200 rounded-2xl p-6 flex gap-4 items-start shadow-sm">
