@@ -1,0 +1,11 @@
+# Vite outputs the production build to dist/public (see vite.config.ts).
+# Paths are relative to the repository root (the site's base directory).
+[build]
+  command = "pnpm --filter @workspace/bright-view-tech... run build"
+  publish = "artifacts/bright-view-tech/dist/public"
+
+# Single-page app: serve index.html for client-side routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
